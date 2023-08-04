@@ -1,0 +1,47 @@
+  .user_info_btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user_options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 999;
+  }
+  
+  .user_options a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .user_options a:hover {
+    background: #f4f4f4;
+  }
+  
+  .user_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align to the right */
+  }
+
+  
+  
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .user_info {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
