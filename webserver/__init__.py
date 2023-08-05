@@ -1,13 +1,11 @@
 from flask import Flask
-from flask_pymongo import PyMongo
-from dotenv import load_dotenv
-import os
 
 app = Flask(__name__)
 
-load_dotenv()
+from .route import bp  # Import the blueprint
 
-mogo_url = os.getenv("MONGO_URI")
-db = PyMongo(app)
+app.register_blueprint(bp)  # Register the blueprint
+#load_dotenv()
 
-from webserver import route
+#mogo_url = os.getenv("MONGO_URI")
+#db = PyMongo(app)

@@ -1,6 +1,7 @@
-from webserver import app , db
-from flask import *
+from flask import Blueprint
 
-@app.route('/', methods=['GET', 'POST'])
-def home():
-   return render_template('home.html')
+bp = Blueprint('main', __name__)
+
+@bp.route('/')
+def index():
+    return 'Hello, World!'
